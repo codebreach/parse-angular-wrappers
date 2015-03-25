@@ -1,6 +1,6 @@
 "use strict";
 
-var ParseWrapperModule = angular.module('ngParseWrappers', [])
+angular.module('ngParseWrappers', [])
   .factory('ParseQueryAngular', ['$q', '$timeout',
     function($q, $timeout) {
 
@@ -155,5 +155,3 @@ var ParseWrapperModule = angular.module('ngParseWrappers', [])
     }
   }
 ]);
-
-export default ParseWrapperModule;
