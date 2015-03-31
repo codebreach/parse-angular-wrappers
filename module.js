@@ -141,7 +141,7 @@ angular.module('ngParseWrappers', [])
 ])
 .run(['ParseAbstractService', function(ParseAbstractService) {
   Parse.Object.extendAngular = function(options) {
-      return ParseAbstractService.EnhanceObject(drinklynk.models.Request);
+      return ParseAbstractService.EnhanceObject(options);
     };
   }
 ])
