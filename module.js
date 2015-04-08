@@ -137,6 +137,7 @@ angular.module('ngParseWrappers', [])
     staticEnhancer(Parse.User, ['logIn', 'signUp', 'become']);
 
     staticEnhancer(Parse.FacebookUtils, ['link', 'logIn', 'unlink']);
+    staticEnhancer(Parse.Cloud, ['run']);
   }
 ])
 .run(['ParseAbstractService', function(ParseAbstractService) {
