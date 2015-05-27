@@ -127,7 +127,7 @@ angular.module('ngParseWrappers', [])
     };
 
     var queryExtensions = {};
-    _.each(['count', 'find', 'first'], enhancedIterator(queryExtensions));
+    _.each(['count', 'find', 'first', 'get'], enhancedIterator(queryExtensions));
     _.each(['each'], unavailableIterator);
     Parse.Query.prototype = _.extend(Parse.Query.prototype, queryExtensions);
 
